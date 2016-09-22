@@ -1,0 +1,1715 @@
+
+<head>
+	<meta charset="utf-8">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Components Documentation - Material Kit by Creative Tim</title>
+
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/material-kit.css" rel="stylesheet">
+	<link href="assets/css/demo.css" rel="stylesheet">
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+	<style>
+		pre.prettyprint{
+		    background-color: #eee;
+		    border: 0px;
+		    margin-bottom: 60px;
+		    margin-top: 30px;
+		    padding: 20px;
+		    text-align: left;
+		}
+		.atv, .str{
+		    color: #05AE0E;
+		}
+		.tag, .pln, .kwd{
+		    color: #3472F7;
+		}
+		.atn{
+		    color: #2C93FF;
+		}
+		.pln{
+		    color: #333;
+		}
+		.com{
+		    color: #999;
+		}
+		.space-top{
+		    margin-top: 50px;
+		}
+		.btn-primary .caret{
+		    border-top-color: #3472F7;
+		    color: #3472F7;
+		}
+		.area-line{
+		    border: 1px solid #999;
+		    border-left: 0;
+		    border-right: 0;
+		    color: #666;
+		    display: block;
+		    margin-top: 20px;
+		    padding: 8px 0;
+		    text-align: center;
+		}
+		.area-line a{
+		    color: #666;
+		}
+		.container-fluid{
+		    padding-right: 15px;
+		    padding-left: 15px;
+		}
+		.table-shopping .td-name{
+			min-width: 130px;
+		}
+	</style>
+</head>
+
+<body class="components-page">
+
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button id="menu-toggle" type="button" class="navbar-toggle" data-target="#navigation-doc">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar bar1"></span>
+        <span class="icon-bar bar2"></span>
+        <span class="icon-bar bar3"></span>
+      </button>
+      <a href="http://www.creative-tim.com">
+           <div class="logo-container">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="Creative Tim Logo">
+                </div>
+                <div class="brand">
+                    Creative Tim
+                </div>
+            </div>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navigation-doc">
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="index.html">Back to Kit</a>
+			</li>
+			<li>
+                <a href="https://github.com/timcreative/material-kit/issues">Have an issue?</a>
+            </li>
+			<li>
+				<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
+					<i class="material-icons">unarchive</i> Upgrade to PRO
+				</a>
+			</li>
+    	</ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="wrapper">
+	<div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&amp;dpr=2&amp;fit=crop&amp;fm=jpg&amp;h=750&amp;ixjsv=2.1.0&amp;ixlib=rb-0.3.5&amp;q=50&amp;w=1450');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<h1 class="title text-center">Components Documentation</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="main main-raised">
+        <div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="fixed-section" data-spy="affix" data-offset-top="340">
+                    <ul>
+                        <li><a href="components-documentation.html#buttons-row">Buttons</a></li>
+                        <li><a href="components-documentation.html#checkbox-row">Checkbox/Radio/Toggle</a></li>
+                        <li><a href="components-documentation.html#dropdown-row">Dropdown</a></li>
+                        <li><a href="components-documentation.html#inputs-row">Inputs</a></li>
+                        <li><a href="components-documentation.html#textarea-row">Textarea</a></li>
+                        <li><a href="components-documentation.html#navbar-row">Navigation</a></li>
+                        <li><a href="components-documentation.html#pagination-row">Pagination</a></li>
+                        <li><a href="components-documentation.html#progressbar-row">Progress Bars</a></li>
+                        <li><a href="components-documentation.html#sliders-row">Sliders</a></li>
+                        <li><a href="components-documentation.html#labels-row">Labels</a></li>
+                        <li><a href="components-documentation.html#tables-row">Tables</a></li>
+                        <li><a href="components-documentation.html#datepicker-row">Datepicker</a></li>
+                        <li><a href="components-documentation.html#modal-row">Modals</a></li>
+                        <li><a href="components-documentation.html#tooltip-row">Tooltips/Popovers</a></li>
+						<li><a href="components-documentation.html#icons-row">Material Icons</a></li>
+                        <li><a href="components-documentation.html#notification-row">Notifications</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-1">
+                <div class="tim-container">
+
+	    	<!-- buttons row -->
+	        <div class="tim-row" id="buttons-row">
+
+                <h2>Buttons</h2>
+                <legend></legend>
+                <h4>Colors</h4>
+                <p>We worked over the original Bootstrap classes, choosing a different, slightly intenser color pallete:</p>
+                <p>
+                       <button class="btn btn-default">Default</button>
+                       <button class="btn btn-primary">Primary</button>
+                       <button class="btn btn-info">Info</button>
+                       <button class="btn btn-success">Success</button><br>
+                       <button class="btn btn-warning">Warning</button>
+                       <button class="btn btn-danger">Danger</button>
+					   <button class="btn btn-white">White</button>
+                </p>
+
+    			<pre class="prettyprint">
+
+&lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-white"&gt;White&lt;/button&gt;
+    			</pre>
+
+
+            	<h4>Sizes</h4>
+                <p>Buttons come in all needed sizes:</p>
+                <p>
+                    <button class="btn btn-primary btn-lg">Large</button>
+                    <button class="btn btn-primary">Normal</button>
+                    <button class="btn btn-primary btn-sm">Small</button>
+                    <button class="btn btn-primary btn-xs">Extra Small</button>
+                </p>
+
+				<pre class="prettyprint">
+
+&lt;button class="btn btn-primary btn-lg"&gt;Large&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Normal&lt;/button&gt;
+&lt;button class="btn btn-primary btn-sm"&gt;Small&lt;/button&gt;
+&lt;button class="btn btn-primary btn-xs"&gt;Extra Small&lt;/button&gt;
+    			</pre>
+
+				<h4>Styles</h4>
+                <p>We added extra classes that can help you better customise the look. You can use regular buttons, rounded corners buttons or plain simple buttons. Let's see some examples:
+                </p>
+				<p>
+					<button class="btn btn-primary">Default</button>
+					<button class="btn btn-primary btn-round">Round</button>
+					<button class="btn btn-primary btn-round">
+						<i class="material-icons">favorite</i> With Icon
+					</button>
+					<button class="btn btn-primary btn-fab btn-fab-mini btn-round">
+						<i class="material-icons">favorite</i>
+					</button>
+					<button class="btn btn-primary btn-just-icon">
+						<i class="material-icons">favorite</i>
+					</button>
+					<button class="btn btn-primary btn-simple">Simple</button>
+
+                </p>
+
+    			<pre class="prettyprint">
+&lt;button class="btn btn-primary"&gt;Default&lt;/button&gt;
+&lt;button class="btn btn-primary btn-round"&gt;Round&lt;/button&gt;
+&lt;button class="btn btn-primary btn-round"&gt;
+	&lt;i class="material-icons"&gt;favorite&lt;/i&gt; With Icon
+&lt;/button&gt;
+&lt;button class="btn btn-primary btn-fab btn-fab-mini btn-round"&gt;
+	&lt;i class="material-icons"&gt;favorite&lt;/i&gt;
+&lt;/button&gt;
+&lt;button class="btn btn-primary btn-just-icon"&gt;
+	&lt;i class="material-icons"&gt;favorite&lt;/i&gt;
+&lt;/button&gt;
+&lt;button class="btn btn-primary btn-simple"&gt;Simple&lt;/button&gt;
+    			</pre>
+
+                <p>
+                    Button groups and disabled state all work like they are supposed to. We used the Font Awesome icons that can be found <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">here</a> and Material Design Icons that can be found <a href="https://design.google.com/icons/" target="_blank"> here</a>.
+                </p>
+        	</div>
+    		<!--  end row -->
+
+    		<!-- checkbox row -->
+        	<div class="tim-row" id="checkbox-row">
+                <h2> Checkboxes </h2>
+                <legend></legend>
+                <p>
+                    To use the custom checkboxes, you don't need to import any separate Javascript file, everything is inside material.min.js
+                </p>
+                <p>
+					</p><div class="checkbox">
+						<label>
+							<input type="checkbox" name="optionsCheckboxes">
+							Unchecked
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="optionsCheckboxes" checked>
+							Checked
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="optionsCheckboxes" disabled>
+							Disabled Unchecked
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="optionsCheckboxes" disabled checked>
+							Disabled Checked
+						</label>
+					</div>
+                
+
+    			<pre class="prettyprint">
+&lt;div class="checkbox"&gt;
+	&lt;label&gt;
+		&lt;input type="checkbox" name="optionsCheckboxes"&gt;
+		Unchecked
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox"&gt;
+	&lt;label&gt;
+		&lt;input type="checkbox" name="optionsCheckboxes" checked&gt;
+		Checked
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox"&gt;
+	&lt;label&gt;
+		&lt;input type="checkbox" name="optionsCheckboxes" disabled&gt;
+		Disabled Unchecked
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox"&gt;
+	&lt;label&gt;
+		&lt;input type="checkbox" name="optionsCheckboxes" disabled checked&gt;
+		Disabled Checked
+	&lt;/label&gt;
+&lt;/div&gt;
+
+				</pre>
+        	</div>
+    		<!-- end row -->
+
+    		<!-- radio row -->
+        	<div class="tim-row" id="radio-row">
+            	<h2> Radio Buttons </h2>
+            	<legend></legend>
+                <p>
+                    To use the custom radio buttons, you don't need to import any separate Javascript file, everything is inside material.min.js.
+                </p>
+                <p>
+					</p><div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios">
+							Radio is off
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios" checked>
+							Radio is on
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadiosDisabled" disabled>
+							Disabled Radio is off
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadiosDisabled" checked disabled>
+							Disabled Radio is on
+						</label>
+					</div>
+                
+
+				<pre class="prettyprint">
+&lt;div class="radio"&gt;
+	&lt;label&gt;
+		&lt;input type="radio" name="optionsRadios"&gt;
+		Radio is off
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+	&lt;label&gt;
+		&lt;input type="radio" name="optionsRadios" checked="true"&gt;
+		Radio is on
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+	&lt;label&gt;
+		&lt;input type="radio" name="optionsRadiosDisabled" disabled&gt;
+		Disabled Radio is off
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+	&lt;label&gt;
+		&lt;input type="radio" name="optionsRadiosDisabled" checked="true" disabled&gt;
+		Disabled Radio is on
+	&lt;/label&gt;
+&lt;/div&gt;
+    			</pre>
+		    </div>
+		    <!-- end row -->
+
+    		<!-- switches row -->
+        	<div class="tim-row" id="switch-row">
+            	<h2>Toggle Buttons</h2>
+            	<legend></legend>
+	            <p>If you want to use something more special than a checkbox, we recomment the toggle buttons.</p>
+
+				<div class="togglebutton">
+					<label>
+						<input type="checkbox" checked>
+						Toggle is on
+					</label>
+				</div>
+
+				<div class="togglebutton">
+					<label>
+						<input type="checkbox">
+						Toggle is off
+					</label>
+				</div>
+
+    			<pre class="prettyprint">
+
+&lt;div class="togglebutton"&gt;
+	&lt;label&gt;
+    	&lt;input type="checkbox" checked=""&gt;
+		Toggle is on
+	&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class="togglebutton"&gt;
+	&lt;label&gt;
+    	&lt;input type="checkbox"&gt;
+		Toggle is off
+	&lt;/label&gt;
+&lt;/div&gt;
+    			</pre>
+    		</div>
+    		<!-- end row -->
+
+		    <!-- dropdown row -->
+		    <div class="tim-row" id="dropdown-row">
+            	<h2> Dropdown </h2>
+            	<legend></legend>
+            	<p> We are very proud to present the dropdown which has a subtle animation. We also thought of another use-case: dropdown with flags. <b>IMPORTANT!</b> The focus state is <b>Purple</b> by default, on the dropdowns from the navbars will take the color of the navbar parent.</p>
+
+	            <div class="row">
+	                <div class="col-md-3 dropdown">
+	                	<a href="components-documentation.html#" class="btn btn-simple dropdown-toggle" data-toggle="dropdown">
+	                    	Regular
+	                    	<b class="caret"></b>
+	                	</a>
+	                	<ul class="dropdown-menu">
+	                    	<li><a href="components-documentation.html#">Action</a></li>
+	                    	<li><a href="components-documentation.html#">Another action</a></li>
+	                    	<li><a href="components-documentation.html#">Something else here</a></li>
+	                    	<li class="divider">
+	                    	<li><a href="components-documentation.html#">Separated link</a></li>
+	                    	<li class="divider">
+	                    	<li><a href="components-documentation.html#">One more separated link</a></li>
+	                	</ul>
+	                </div>
+
+	                <div class="col-md-3 dropdown">
+	                    <a href="components-documentation.html#" class="btn btn-simple dropdown-toggle " data-toggle="dropdown">
+	                        <img src="assets/img/flags/US.png">
+	                         Flags
+	                         <b class="caret"></b>
+	                    </a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="components-documentation.html#"><img src="assets/img/flags/DE.png"> Deutsch</a></li>
+	                        <li><a href="components-documentation.html#"><img src="assets/img/flags/GB.png"> English(UK)</a></li>
+	                        <li><a href="components-documentation.html#"><img src="assets/img/flags/FR.png"> Français</a></li>
+	                        <li><a href="components-documentation.html#"><img src="assets/img/flags/RO.png"> Română</a></li>
+	                        <li><a href="components-documentation.html#"><img src="assets/img/flags/IT.png"> Italiano</a></li>
+
+	                        <li class="divider">
+	                        <li><a href="components-documentation.html#"><img src="assets/img/flags/ES.png"> Español <span class="label label-default">soon</span></a></li>
+	                        <li><a href="components-documentation.html#"><img src="assets/img/flags/BR.png"> Português <span class="label label-default">soon</span></a></li>
+	                        <li><a href="components-documentation.html#"><img src="assets/img/flags/JP.png"> 日本語 <span class="label label-default">soon</span></a></li>
+	                    </ul>
+	                </div>
+	            </div>
+
+    			<pre class="prettyprint">
+&lt;div class="col-md-3 dropdown"&gt;
+	&lt;a href="#" class="btn btn-simple dropdown-toggle" data-toggle="dropdown"&gt;
+    	Regular
+    	&lt;b class="caret"&gt;&lt;/b&gt;
+	&lt;/a&gt;
+	&lt;ul class="dropdown-menu"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+    			</pre>
+		    </div>
+		    <!-- end row -->
+
+    		<!-- inputs row -->
+        	<div class="tim-row" id="inputs-row">
+                <h2>Inputs </h2>
+                <legend></legend>
+
+                <p>
+                We restyled the Bootstrap input to give it a more flat, minimal look. You can use them with regular labels, floating labels and states or input groups.
+                </p>
+                <div class="row">
+					<div class="col-sm-4">
+	                	<div class="form-group">
+	        	        	<input type="text" value="" placeholder="Regular" class="form-control">
+	                	</div>
+	                </div>
+
+					<div class="col-sm-4">
+						<div class="form-group label-floating">
+							<label class="control-label">With Floating Label</label>
+							<input type="email" class="form-control">
+						</div>
+					</div>
+
+	                <div class="col-sm-4">
+	                	<div class="form-group label-floating has-success">
+							<label class="control-label">Success input</label>
+	                    	<input type="text" value="Success" class="form-control">
+							<span class="form-control-feedback">
+								<i class="material-icons">done</i>
+							</span>
+	                	</div>
+	                </div>
+
+	                <div class="col-sm-4">
+	                	<div class="form-group label-floating has-error">
+							<label class="control-label">Error input</label>
+	                    	<input type="email" value="Error Input" class="form-control">
+	                    	<span class="material-icons form-control-feedback">clear</span>
+	                	</div>
+	                </div>
+
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="material-icons">group</i>
+							</span>
+							<input type="text" class="form-control" placeholder="With Material Icons">
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="fa fa-group"></i>
+							</span>
+							<input type="text" class="form-control" placeholder="With Font Awesome Icons">
+						</div>
+					</div>
+	        	</div>
+
+
+    			<pre class="prettyprint">
+
+&lt;div class="col-sm-4"&gt;
+	&lt;div class="form-group"&gt;
+    	&lt;input type="text" value="" placeholder="Regular" class="form-control" /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="col-sm-4"&gt;
+	&lt;div class="form-group label-floating"&gt;
+		&lt;label class="control-label"&gt;With Floating Label&lt;/label&gt;
+		&lt;input type="email" class="form-control"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="col-sm-4"&gt;
+	&lt;div class="form-group label-floating has-success"&gt;
+		&lt;label class="control-label"&gt;Success input&lt;/label&gt;
+		&lt;input type="text" value="Success" class="form-control" /&gt;
+		&lt;span class="form-control-feedback"&gt;
+			&lt;i class="material-icons"&gt;done&lt;/i&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="col-sm-4"&gt;
+	&lt;div class="form-group label-floating has-error"&gt;
+		&lt;label class="control-label"&gt;Error input&lt;/label&gt;
+		&lt;input type="email" value="Error Input" class="form-control" /&gt;
+		&lt;span class="material-icons form-control-feedback"&gt;clear&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="col-sm-4"&gt;
+	&lt;div class="input-group"&gt;
+		&lt;span class="input-group-addon"&gt;
+			&lt;i class="material-icons"&gt;group&lt;/i&gt;
+		&lt;/span&gt;
+		&lt;input type="text" class="form-control" placeholder="With Material Icons"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="col-sm-4"&gt;
+	&lt;div class="input-group"&gt;
+		&lt;span class="input-group-addon"&gt;
+			&lt;i class="fa fa-group"&gt;&lt;/i&gt;
+		&lt;/span&gt;
+		&lt;input type="text" class="form-control" placeholder="With Font Awesome Icons"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre>
+    		</div>
+    		<!-- end row -->
+
+
+			<!-- textarea row -->
+			<div class="tim-row" id="textarea-row">
+			    <h2>Textarea</h2>
+			    <legend></legend>
+			    <p>The textarea has a new style, so it looks similar to all other inputs.</p>
+
+			    <textarea class="form-control" placeholder="Here can be your nice text" rows="5"></textarea>
+
+				<pre class="prettyprint">
+&lt;textarea class="form-control" placeholder="Here can be your nice text" rows="5"&gt;&lt;/textarea&gt;
+				</pre>
+		    </div>
+		    <!-- end row -->
+
+    		<!-- navbar row -->
+    		<div class="tim-row" id="navbar-row">
+	            <h2>Navbar </h2>
+	            <legend></legend>
+	            <p>The classic Bootstrap Navbar was restyled:</p>
+
+	            <div id="navbar">
+	                <nav class="navbar navbar-default" role="navigation">
+	                	<div class="container-fluid">
+	                    	<div class="navbar-header">
+	                    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			                        <span class="sr-only">Toggle navigation</span>
+			                        <span class="icon-bar"></span>
+			                        <span class="icon-bar"></span>
+			                        <span class="icon-bar"></span>
+	                    		</button>
+	                    		<a class="navbar-brand" href="components-documentation.html#">Brand</a>
+	                    	</div>
+
+	                    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                    		<ul class="nav navbar-nav">
+	                				<li class="active"><a href="components-documentation.html#">Link</a></li>
+	                        		<li><a href="components-documentation.html#">Link</a></li>
+	                        		<li class="dropdown">
+	                        			<a href="components-documentation.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	                        			<ul class="dropdown-menu">
+											<li><a href="components-documentation.html#">Action</a></li>
+											<li><a href="components-documentation.html#">Another action</a></li>
+											<li><a href="components-documentation.html#">Something else here</a></li>
+											<li class="divider">
+											<li><a href="components-documentation.html#">Separated link</a></li>
+											<li class="divider">
+											<li><a href="components-documentation.html#">One more separated link</a></li>
+	                        			</ul>
+	                        		</li>
+	                    		</ul>
+	                    	</div>
+	                	</div>
+	                </nav>
+	            </div><!--  end navbar -->
+
+	    		<pre class="prettyprint">
+&lt;nav class="navbar navbar-default" role="navigation"&gt;
+	&lt;div class="container-fluid"&gt;
+    	&lt;div class="navbar-header"&gt;
+    		&lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"&gt;
+                &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    		&lt;/button&gt;
+    		&lt;a class="navbar-brand" href="#"&gt;Brand&lt;/a&gt;
+    	&lt;/div&gt;
+
+    	&lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+    		&lt;ul class="nav navbar-nav"&gt;
+				&lt;li class="active"&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+        		&lt;li class="dropdown"&gt;
+        			&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Dropdown &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
+        			&lt;ul class="dropdown-menu"&gt;
+					  &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+					  &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+					  &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+					  &lt;li class="divider"&gt;&lt;/li&gt;
+					  &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+					  &lt;li class="divider"&gt;&lt;/li&gt;
+				      &lt;li&gt;&lt;a href="#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+        			&lt;/ul&gt;
+        		&lt;/li&gt;
+    		&lt;/ul&gt;
+    	&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;
+	    		</pre>
+
+	            <p class="space-top">Besides the default navbar, we added 4 new colors: blue, green, orange, red. If you want to use one of them, you have to replace the <code>.navbar-default</code> or <code>navbar-primary</code> with the class for the chosen color <code>.navbar-info</code>, <code>.navbar-success</code>, <code>.navbar-warning</code>, <code>.navbar-danger</code>.</p>
+
+		    <!-- navbar default -->
+		    <div id="navbar-default">
+		        <nav class="navbar navbar-default" role="navigation">
+		          <div class="container-fluid">
+		            <!-- Brand and toggle get grouped for better mobile display -->
+		            <div class="navbar-header">
+		              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		              </button>
+		              <a class="navbar-brand" href="components-documentation.html#">Brand</a>
+		            </div>
+
+		            <!-- Collect the nav links, forms, and other content for toggling -->
+		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		              <ul class="nav navbar-nav">
+		                <li class="active"><a href="components-documentation.html#">Link</a></li>
+		                <li><a href="components-documentation.html#">Link</a></li>
+		                <li class="dropdown">
+		                  <a href="components-documentation.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+		                  <ul class="dropdown-menu">
+		                    <li><a href="components-documentation.html#">Action</a></li>
+		                    <li><a href="components-documentation.html#">Another action</a></li>
+		                    <li><a href="components-documentation.html#">Something else here</a></li>
+		                    <li class="divider">
+		                    <li><a href="components-documentation.html#">Separated link</a></li>
+		                    <li class="divider">
+		                    <li><a href="components-documentation.html#">One more separated link</a></li>
+		                  </ul>
+		                </li>
+		              </ul>
+		            </div>
+		          </div>
+		        </nav>
+
+		    </div><!--  end navbar -->
+
+		    <!-- navbar info -->
+		    <div id="navbar-info">
+	            <nav class="navbar navbar-info" role="navigation">
+	              <div class="container-fluid">
+	                <!-- Brand and toggle get grouped for better mobile display -->
+	                <div class="navbar-header">
+	                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                  </button>
+	                  <a class="navbar-brand" href="components-documentation.html#">Brand</a>
+	                </div>
+
+	                <!-- Collect the nav links, forms, and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                  <ul class="nav navbar-nav">
+	                    <li class="active"><a href="components-documentation.html#">Link</a></li>
+	                    <li><a href="components-documentation.html#">Link</a></li>
+	                    <li class="dropdown">
+	                      <a href="components-documentation.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	                      <ul class="dropdown-menu">
+	                        <li><a href="components-documentation.html#">Action</a></li>
+	                        <li><a href="components-documentation.html#">Another action</a></li>
+	                        <li><a href="components-documentation.html#">Something else here</a></li>
+	                        <li class="divider">
+	                        <li><a href="components-documentation.html#">Separated link</a></li>
+	                        <li class="divider">
+	                        <li><a href="components-documentation.html#">One more separated link</a></li>
+	                      </ul>
+	                    </li>
+	                  </ul>
+	                </div><!-- /.navbar-collapse -->
+	              </div><!-- /.container-fluid -->
+	            </nav>
+
+	        </div><!--  end navbar -->
+
+		    <!-- navbar success -->
+		    <div id="navbar-success">
+		        <nav class="navbar navbar-success" role="navigation">
+		          <div class="container-fluid">
+		            <!-- Brand and toggle get grouped for better mobile display -->
+		            <div class="navbar-header">
+		              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		              </button>
+		              <a class="navbar-brand" href="components-documentation.html#">Brand</a>
+		            </div>
+
+		            <!-- Collect the nav links, forms, and other content for toggling -->
+		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		              <ul class="nav navbar-nav">
+		                <li class="active"><a href="components-documentation.html#">Link</a></li>
+		                <li><a href="components-documentation.html#">Link</a></li>
+		                <li class="dropdown">
+		                  <a href="components-documentation.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+		                  <ul class="dropdown-menu">
+		                    <li><a href="components-documentation.html#">Action</a></li>
+		                    <li><a href="components-documentation.html#">Another action</a></li>
+		                    <li><a href="components-documentation.html#">Something else here</a></li>
+		                    <li class="divider">
+		                    <li><a href="components-documentation.html#">Separated link</a></li>
+		                    <li class="divider">
+		                    <li><a href="components-documentation.html#">One more separated link</a></li>
+		                  </ul>
+		                </li>
+		              </ul>
+		            </div><!-- /.navbar-collapse -->
+		          </div><!-- /.container-fluid -->
+		        </nav>
+
+		    </div><!--  end navbar -->
+
+		    <!-- navbar warning -->
+		    <div id="navbar-warning">
+		        <nav class="navbar navbar-warning" role="navigation">
+		          <div class="container-fluid">
+		            <!-- Brand and toggle get grouped for better mobile display -->
+		            <div class="navbar-header">
+		              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		              </button>
+		              <a class="navbar-brand" href="components-documentation.html#">Brand</a>
+		            </div>
+
+		            <!-- Collect the nav links, forms, and other content for toggling -->
+		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		              <ul class="nav navbar-nav">
+		                <li class="active"><a href="components-documentation.html#">Link</a></li>
+		                <li><a href="components-documentation.html#">Link</a></li>
+		                <li class="dropdown">
+		                  <a href="components-documentation.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+		                  <ul class="dropdown-menu">
+		                    <li><a href="components-documentation.html#">Action</a></li>
+		                    <li><a href="components-documentation.html#">Another action</a></li>
+		                    <li><a href="components-documentation.html#">Something else here</a></li>
+		                    <li class="divider">
+		                    <li><a href="components-documentation.html#">Separated link</a></li>
+		                    <li class="divider">
+		                    <li><a href="components-documentation.html#">One more separated link</a></li>
+		                  </ul>
+		                </li>
+		              </ul>
+		            </div><!-- /.navbar-collapse -->
+		          </div><!-- /.container-fluid -->
+		        </nav>
+
+		    </div><!--  end navbar -->
+
+		    <!-- navbar danger -->
+		    <div id="navbar-danger">
+		        <nav class="navbar navbar-danger" role="navigation">
+		          <div class="container-fluid">
+		            <!-- Brand and toggle get grouped for better mobile display -->
+		            <div class="navbar-header">
+		              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		              </button>
+		              <a class="navbar-brand" href="components-documentation.html#">Brand</a>
+		            </div>
+
+		            <!-- Collect the nav links, forms, and other content for toggling -->
+		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		              <ul class="nav navbar-nav">
+		                <li class="active"><a href="components-documentation.html#">Link</a></li>
+		                <li><a href="components-documentation.html#">Link</a></li>
+		                <li class="dropdown">
+		                  <a href="components-documentation.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+		                  <ul class="dropdown-menu">
+		                    <li><a href="components-documentation.html#">Action</a></li>
+		                    <li><a href="components-documentation.html#">Another action</a></li>
+		                    <li><a href="components-documentation.html#">Something else here</a></li>
+		                    <li class="divider">
+		                    <li><a href="components-documentation.html#">Separated link</a></li>
+		                    <li class="divider">
+		                    <li><a href="components-documentation.html#">One more separated link</a></li>
+		                  </ul>
+		                </li>
+		              </ul>
+		            </div><!-- /.navbar-collapse -->
+		          </div><!-- /.container-fluid -->
+		        </nav>
+
+		    </div><!--  end navbar -->
+
+            <p class="space-top">
+                Besides all this customisation, we have an extra navbar. <code>.navbar-transparent</code> is a special class that you can to use if you want the navbar to be transparent and then turn to color after scrolling 260px using the class <code>.navbar-color-on-scroll</code>. We recommend that the part of your page that has the transparent navbar contains something non-cluttered, like an image. If you want to see a nice example in details, check <a href="examples/profile-page.html" target="_blank">the Profile Page</a>.
+            </p>
+
+	    </div>
+	    <!-- end row -->
+
+	    <!-- nav pills row -->
+	    <div class="tim-row" id="navpills-row">
+            <h2> Nav Pills</h2>
+            <legend></legend>
+            <p>
+                We changed the design for the Bootstrap nav pills into something a bit more fresh. We also added more color classes for customisation like <code>.nav-pills-primary</code>,<code>.nav-pills-info</code>,<code>.nav-pills-success</code>,<code>.nav-pills-warning</code>,<code>.nav-pills-danger</code>
+            </p>
+
+			<ul class="nav nav-pills nav-pills-primary" role="tablist">
+				<li>
+					<a href="components-documentation.html#dashboard" role="tab" data-toggle="tab">
+						<i class="material-icons">dashboard</i>
+						Dashboard
+					</a>
+				</li>
+				<li class="active">
+					<a href="components-documentation.html#schedule" role="tab" data-toggle="tab">
+						<i class="material-icons">schedule</i>
+						Schedule
+					</a>
+				</li>
+				<li>
+					<a href="components-documentation.html#tasks" role="tab" data-toggle="tab">
+						<i class="material-icons">list</i>
+						Tasks
+					</a>
+				</li>
+			</ul>
+			<br>
+			<ul class="nav nav-pills nav-pills-info" role="tablist">
+				<li>
+					<a href="components-documentation.html#dashboard" role="tab" data-toggle="tab">
+						<i class="material-icons">dashboard</i>
+						Dashboard
+					</a>
+				</li>
+				<li class="active">
+					<a href="components-documentation.html#schedule" role="tab" data-toggle="tab">
+						<i class="material-icons">schedule</i>
+						Schedule
+					</a>
+				</li>
+				<li>
+					<a href="components-documentation.html#tasks" role="tab" data-toggle="tab">
+						<i class="material-icons">list</i>
+						Tasks
+					</a>
+				</li>
+			</ul>
+			<br>
+			<ul class="nav nav-pills nav-pills-success" role="tablist">
+				<li>
+					<a href="components-documentation.html#dashboard" role="tab" data-toggle="tab">
+						<i class="material-icons">dashboard</i>
+						Dashboard
+					</a>
+				</li>
+				<li class="active">
+					<a href="components-documentation.html#schedule" role="tab" data-toggle="tab">
+						<i class="material-icons">schedule</i>
+						Schedule
+					</a>
+				</li>
+				<li>
+					<a href="components-documentation.html#tasks" role="tab" data-toggle="tab">
+						<i class="material-icons">list</i>
+						Tasks
+					</a>
+				</li>
+			</ul>
+			<br>
+			<ul class="nav nav-pills nav-pills-warning" role="tablist">
+				<li>
+					<a href="components-documentation.html#dashboard" role="tab" data-toggle="tab">
+						<i class="material-icons">dashboard</i>
+						Dashboard
+					</a>
+				</li>
+				<li class="active">
+					<a href="components-documentation.html#schedule" role="tab" data-toggle="tab">
+						<i class="material-icons">schedule</i>
+						Schedule
+					</a>
+				</li>
+				<li>
+					<a href="components-documentation.html#tasks" role="tab" data-toggle="tab">
+						<i class="material-icons">list</i>
+						Tasks
+					</a>
+				</li>
+			</ul>
+			<br>
+			<ul class="nav nav-pills nav-pills-danger" role="tablist">
+				<li>
+					<a href="components-documentation.html#dashboard" role="tab" data-toggle="tab">
+						<i class="material-icons">dashboard</i>
+						Dashboard
+					</a>
+				</li>
+				<li class="active">
+					<a href="components-documentation.html#schedule" role="tab" data-toggle="tab">
+						<i class="material-icons">schedule</i>
+						Schedule
+					</a>
+				</li>
+				<li>
+					<a href="components-documentation.html#tasks" role="tab" data-toggle="tab">
+						<i class="material-icons">list</i>
+						Tasks
+					</a>
+				</li>
+			</ul>
+
+    		<pre class="prettyprint">
+&lt;ul class="nav nav-pills nav-pills-primary" role="tablist"&gt;
+	&lt;li&gt;
+		&lt;a href="#dashboard" role="tab" data-toggle="tab"&gt;
+			&lt;i class="material-icons"&gt;dashboard&lt;/i&gt;
+			Dashboard
+		&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="active"&gt;
+		&lt;a href="#schedule" role="tab" data-toggle="tab"&gt;
+			&lt;i class="material-icons"&gt;schedule&lt;/i&gt;
+			Schedule
+		&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;a href="#tasks" role="tab" data-toggle="tab"&gt;
+			&lt;i class="material-icons"&gt;list&lt;/i&gt;
+			Tasks
+		&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+    		</pre>
+		    </div>
+		    <!-- end row -->
+
+		    <!-- pagination row -->
+		    <div class="tim-row" id="pagination-row">
+		            <h2>Pagination</h2>
+		            <legend></legend>
+		            <p>The Bootstrap pagination elements were customised to fit the overall theme. Besides the classic look, we also added the color classes to offer more customisation like <code>.pagination-info</code>, <code>.pagination-success</code>, <code>.pagination-warning</code>, <code>.pagination-danger</code>.
+		        </p>
+		        <ul class="pagination pagination-primary">
+		          <li><a href="components-documentation.html#"></a></li>
+		          <li class="active"><a href="components-documentation.html#">1</a></li>
+		          <li><a href="components-documentation.html#">2</a></li>
+		          <li><a href="components-documentation.html#">3</a></li>
+		          <li><a href="components-documentation.html#">4</a></li>
+		          <li><a href="components-documentation.html#">5</a></li>
+		          <li><a href="components-documentation.html#">&gt;</a></li>
+		        </ul>
+
+				<ul class="pagination pagination-info">
+		          <li><a href="components-documentation.html#"></a></li>
+		          <li><a href="components-documentation.html#">1</a></li>
+		          <li class="active"><a href="components-documentation.html#">2</a></li>
+		          <li><a href="components-documentation.html#">3</a></li>
+		          <li><a href="components-documentation.html#">4</a></li>
+		          <li><a href="components-documentation.html#">5</a></li>
+		          <li><a href="components-documentation.html#">&gt;</a></li>
+		        </ul>
+
+		        <ul class="pagination pagination-success">
+		          <li><a href="components-documentation.html#"></a></li>
+		          <li><a href="components-documentation.html#">1</a></li>
+		          <li><a href="components-documentation.html#">2</a></li>
+		          <li class="active"><a href="components-documentation.html#">3</a></li>
+		          <li><a href="components-documentation.html#">4</a></li>
+		          <li><a href="components-documentation.html#">5</a></li>
+		          <li><a href="components-documentation.html#">&gt;</a></li>
+		        </ul>
+
+				<ul class="pagination pagination-warning">
+		          <li><a href="components-documentation.html#"></a></li>
+		          <li><a href="components-documentation.html#">1</a></li>
+		          <li><a href="components-documentation.html#">2</a></li>
+		          <li><a href="components-documentation.html#">3</a></li>
+		          <li class="active"><a href="components-documentation.html#">4</a></li>
+		          <li><a href="components-documentation.html#">5</a></li>
+		          <li><a href="components-documentation.html#">&gt;</a></li>
+		        </ul>
+
+				<ul class="pagination pagination-danger">
+		          <li><a href="components-documentation.html#"></a></li>
+		          <li><a href="components-documentation.html#">1</a></li>
+		          <li><a href="components-documentation.html#">2</a></li>
+		          <li><a href="components-documentation.html#">3</a></li>
+		          <li><a href="components-documentation.html#">4</a></li>
+		          <li class="active"><a href="components-documentation.html#">5</a></li>
+		          <li><a href="components-documentation.html#">&gt;</a></li>
+		        </ul>
+
+		    	<pre class="prettyprint">
+
+&lt;ul class="pagination pagination-primary"&gt;
+	&lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&amp;gt
+		    </pre>
+		    </div>
+		    <!-- end row -->
+
+		    <!-- progressbar row -->
+		    <div class="tim-row" id="progressbar-row">
+	            <h2>Progress Bars</h2>
+	            <legend></legend>
+
+	            <p>The progress bars from Bootstrap hold the same classes and functionality. Adding this kit over your existing project will only make it look more clean. The default line is gray, each bar has a specific color but you can add some colors for the background lines using the next classes <code>.progress-line-primary</code>, <code>.progress-line-info</code>, <code>.progress-line-success</code>, <code>.progress-line-warning</code>, <code>.progress-line-danger</code>, </p>
+	            <div class="progress">
+	            	<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+	                	<span class="sr-only">60% Complete</span>
+	            	</div>
+	            </div>
+	            <div class="progress">
+	            	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	                	<span class="sr-only">60% Complete</span>
+	            	</div>
+	            </div>
+				<div class="progress progress-line-primary">
+	            	<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+	                	<span class="sr-only">60% Complete</span>
+	            	</div>
+	            </div>
+				<div class="progress progress-line-info">
+	            	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	                	<span class="sr-only">60% Complete</span>
+	            	</div>
+	            </div>
+	            <div class="progress">
+	            	<div class="progress-bar progress-bar-success" style="width: 35%">
+	            		<span class="sr-only">35% Complete (success)</span>
+	            	</div>
+	            	<div class="progress-bar progress-bar-warning" style="width: 20%">
+	                	<span class="sr-only">20% Complete (warning)</span>
+		            </div>
+		            <div class="progress-bar progress-bar-danger" style="width: 10%">
+		            	<span class="sr-only">10% Complete (danger)</span>
+		            </div>
+	            </div>
+
+	    		<pre class="prettyprint">
+&lt;div class="progress"&gt;
+	&lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"&gt;
+	&lt;span class="sr-only"&gt;30% Complete&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+	&lt;div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"&gt;
+	&lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress progress-line-primary"&gt;
+	&lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"&gt;
+	&lt;span class="sr-only"&gt;30% Complete&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress progress-line-info"&gt;
+	&lt;div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"&gt;
+	&lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress"&gt;
+	&lt;div class="progress-bar progress-bar-success" style="width: 35%"&gt;
+	&lt;span class="sr-only"&gt;35% Complete (success)&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="progress-bar progress-bar-warning" style="width: 20%"&gt;
+	&lt;span class="sr-only"&gt;20% Complete (warning)&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="progress-bar progress-bar-danger" style="width: 10%"&gt;
+	&lt;span class="sr-only"&gt;10% Complete (danger)&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+			    </pre>
+			    </div>
+			    <!-- end row -->
+
+			    <!-- sliders row -->
+			    <div class="tim-row" id="sliders-row">
+		            <h2>Sliders</h2>
+		            <legend></legend>
+		            <p>We restyled noUIslider, while keeping the design consistent. You can use other classes for colors like <code>.slider-info</code>, <code>.slider-success</code>, <code>.slider-warning</code>, <code>.slider-danger</code>, . Check also <a href="http://refreshless.com/nouislider/" target="_blank">noUISlider Full Documentation</a>.</p>
+
+					<div id="sliderRegular" class="slider"></div>
+					<br>
+					<div id="sliderDouble" class="slider slider-info"></div>
+
+
+		    	<pre class="prettyprint">
+&lt;!-- Markup --&gt;
+&lt;div id="sliderRegular" class="slider"&gt;&lt;/div&gt;
+&lt;div id="sliderDouble" class="slider slider-info"&gt;&lt;/div&gt;
+
+&lt;!-- Javascript --&gt;
+$('#sliderRegular').noUiSlider({
+	start: 40,
+	connect: "lower",
+	range: {
+	    min: 0,
+	    max: 100
+	}
+});
+
+$('#sliderDouble').noUiSlider({
+	start: [20, 60] ,
+	connect: true,
+	range: {
+	    min: 0,
+	    max: 100
+	}
+});
+		    	</pre>
+				</div>
+				<!-- end row -->
+
+			    <!-- labels row -->
+			    <div class="tim-row" id="labels-row">
+			        <h2>Labels</h2>
+			        <legend></legend>
+			        <p>We restyled the default options for labels and we added the filled class, that can be used in any combination.</p>
+			        <span class="label label-default">Default</span>
+			        <span class="label label-primary">Primary</span>
+			        <span class="label label-success">Success</span>
+			        <span class="label label-info">Info</span>
+			        <span class="label label-warning">Warning</span>
+			        <span class="label label-danger">Danger</span>
+
+					<pre class="prettyprint">
+
+&lt;span class="label label-default"&gt;Default&lt;/span&gt;
+&lt;span class="label label-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="label label-success"&gt;Success&lt;/span&gt;
+&lt;span class="label label-info"&gt;Info&lt;/span&gt;
+&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="label label-danger"&gt;Danger&lt;/span&gt;
+			    	</pre>
+
+			    </div>
+			    <!-- end row -->
+
+
+
+
+
+		    <!-- tables row -->
+		    <div class="tim-row" id="tables-row">
+		        <h2>Tables</h2>
+		        <legend></legend>
+		        <p>All Boostrap classes for tables are supported and improved.</p>
+		        <h4>Simple Table with Actions</h4>
+		        <div class="table-responsive">
+		            <table class="table">
+		                <thead>
+		                    <tr>
+		                        <th class="text-center">#</th>
+		                        <th>Name</th>
+		                        <th>Job Position</th>
+		                        <th>Since</th>
+		                        <th class="text-right">Salary</th>
+		                        <th class="text-right">Actions</th>
+		                    </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <td class="text-center">1</td>
+		                        <td>Andrew Mike</td>
+		                        <td>Develop</td>
+		                        <td>2013</td>
+		                        <td class="text-right">€ 99,225</td>
+		                        <td class="td-actions text-right">
+		                            <button type="button" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs">
+		                                <i class="fa fa-user"></i>
+		                            </button>
+		                            <button type="button" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs">
+		                                <i class="fa fa-edit"></i>
+		                            </button>
+		                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+		                                <i class="fa fa-times"></i>
+		                            </button>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td class="text-center">2</td>
+		                        <td>John Doe</td>
+		                        <td>Design</td>
+		                        <td>2012</td>
+		                        <td class="text-right">€ 89,241</td>
+		                        <td class="td-actions text-right">
+		                            <button type="button" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs">
+		                                <i class="fa fa-user"></i>
+		                            </button>
+		                            <button type="button" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs">
+		                                <i class="fa fa-edit"></i>
+		                            </button>
+		                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+		                                <i class="fa fa-times"></i>
+		                            </button>
+		                        </td>
+		                    </tr>
+		                    <tr>
+		                        <td class="text-center">3</td>
+		                        <td>Alex Mike</td>
+		                        <td>Design</td>
+		                        <td>2010</td>
+		                        <td class="text-right">€ 92,144</td>
+		                        <td class="td-actions text-right">
+		                            <button type="button" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs">
+		                                <i class="fa fa-user"></i>
+		                            </button>
+		                            <button type="button" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs">
+		                                <i class="fa fa-edit"></i>
+		                            </button>
+		                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+		                                <i class="fa fa-times"></i>
+		                            </button>
+		                        </td>
+		                    </tr>
+		                </tbody>
+		            </table>
+		            </div>
+
+					<pre class="prettyprint">
+
+&lt;table class="table"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th class="text-center"&gt;#&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Job Position&lt;/th&gt;
+            &lt;th&gt;Since&lt;/th&gt;
+            &lt;th class="text-right"&gt;Salary&lt;/th&gt;
+            &lt;th class="text-right"&gt;Actions&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class="text-center"&gt;1&lt;/td&gt;
+            &lt;td&gt;Andrew Mike&lt;/td&gt;
+            &lt;td&gt;Develop&lt;/td&gt;
+            &lt;td&gt;2013&lt;/td&gt;
+            &lt;td class="text-right"&gt;&amp;euro; 99,225&lt;/td&gt;
+            &lt;td class="td-actions text-right"&gt;
+                &lt;button type="button" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs"&gt;
+                    &lt;i class="fa fa-user"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button type="button" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs"&gt;
+                    &lt;i class="fa fa-edit"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs"&gt;
+                    &lt;i class="fa fa-times"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="text-center"&gt;2&lt;/td&gt;
+            &lt;td&gt;John Doe&lt;/td&gt;
+            &lt;td&gt;Design&lt;/td&gt;
+            &lt;td&gt;2012&lt;/td&gt;
+            &lt;td class="text-right"&gt;&amp;euro; 89,241&lt;/td&gt;
+            &lt;td class="td-actions text-right"&gt;
+                &lt;button type="button" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs"&gt;
+                    &lt;i class="fa fa-user"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button type="button" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs"&gt;
+                    &lt;i class="fa fa-edit"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs"&gt;
+                    &lt;i class="fa fa-times"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="text-center"&gt;3&lt;/td&gt;
+            &lt;td&gt;Alex Mike&lt;/td&gt;
+            &lt;td&gt;Design&lt;/td&gt;
+            &lt;td&gt;2010&lt;/td&gt;
+            &lt;td class="text-right"&gt;&amp;euro; 92,144&lt;/td&gt;
+            &lt;td class="td-actions text-right"&gt;
+                &lt;button type="button" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs"&gt;
+                    &lt;i class="fa fa-user"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button type="button" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs"&gt;
+                    &lt;i class="fa fa-edit"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs"&gt;
+                    &lt;i class="fa fa-times"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+		    </pre>
+
+
+				</div>
+		    </div>
+		    <!-- end row -->
+
+
+		    <!-- datepicker row -->
+		    <div class="tim-row" id="datepicker-row">
+		        <h2>Datepicker</h2>
+		        <legend></legend>
+		        <p>The re-styled the Bootstrap datepicker. Checkout the <a href="http://www.eyecon.ro/bootstrap-datepicker/" target="_blank">Bootstrap Datepicker Full Documentation</a>.</p>
+		        <div class="row">
+		            <div class="col-md-4">
+		                <input class="datepicker form-control" type="text" value="03/12/2016">
+		            </div>
+		        </div>
+			    <pre class="prettyprint">
+&lt;!-- markup --&gt;
+&lt;input class="datepicker form-control" type="text" value="03/12/2016"/&gt;
+
+&lt;!-- javascript --&gt;
+
+$('.datepicker').datepicker({
+	weekStart:1
+});
+	    		</pre>
+
+			    </div>
+			    <!-- end row -->
+
+			    <!-- modals row -->
+			    <div class="tim-row" id="modal-row">
+			        <h2>Modals</h2>
+			        <legend></legend>
+			        <p>We restyled the classic Bootstrap Modal and gave it a more simple look.<br>
+					<b>IMPORTANT!</b> Please make sure you place the modal body outside of the <code>div.wrapper</code> tag.
+			        </p>
+			        <!-- Button trigger modal -->
+			        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+
+			    <pre class="prettyprint">
+
+&lt;!-- Button trigger modal --&gt;
+&lt;button class="btn btn-primary" data-toggle="modal" data-target="#myModal"&gt;
+  Launch demo modal
+&lt;/button&gt;
+
+&lt;!-- Modal Core --&gt;
+&lt;div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&amp;times;&lt;/button&gt;
+        &lt;h4 class="modal-title" id="myModalLabel"&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-default btn-simple" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-info btn-simple"&gt;Save&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    			</pre>
+
+    			</div>
+    			<!-- end row -->
+
+		    	<!-- tooltip row -->
+		    	<div class="tim-row" id="tooltip-row">
+		            <h2>Tooltips</h2>
+		            <legend></legend>
+		            <p style="margin-bottom: 45px;">We restyled the Bootstrap tooltip.</p>
+		            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Button with Tooltip</button>
+
+		    	<pre class="prettyprint">
+&lt;!-- Markup --&gt;
+&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top"&gt;Button with Tooltip&lt;/button&gt;
+
+&lt;!-- Javascript --&gt;
+$('[data-toggle="tooltip"]').tooltip();
+				</pre>
+
+				</div>
+			    <!-- end row -->
+
+			    <!-- popover row -->
+			    <div class="tim-row" id="popover-row">
+			        <h2>Popovers</h2>
+			        <legend></legend>
+			        <p>
+			            We restyled the Bootstrap popover to align with the Material Design Concept. <br>
+			            See the following example:
+			        </p>
+			        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Here will be some very useful information about his popover.">On top</button>
+			    <pre class="prettyprint">
+&lt;!-- markup --&gt;
+
+&lt;button type="button" class="btn btn-default" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Here will be some very useful information about his popover."&gt;On top&lt;/button&gt;
+
+
+&lt;!-- javascript --&gt;
+
+$('[data-toggle="popover"]').popover();
+    			</pre>
+			    </div>
+			    <!-- end row -->
+
+				<!-- popover row -->
+			    <div class="tim-row" id="icons-row">
+			        <h2>Material Icons</h2>
+			        <legend></legend>
+			        <p>
+			            We used the default <a href="https://design.google.com/icons/" target="_blank">Icons for the Material Design</a> which provided by Google.
+			        </p>
+			        <i class="material-icons">face</i>
+			    <pre class="prettyprint">
+
+&lt;i class="material-icons"&gt;face&lt;/i&gt;
+    			</pre>
+			    </div>
+			    <!-- end row -->
+
+
+			    <!-- notification row -->
+			    <div class="tim-row" id="notification-row">
+			        <h2> Notifications </h2>
+			        <legend></legend>
+			        <p>The new notifications are looking fresh and clean. They go great with the navbar. For these notifications examples we used the <code>.container-fluid</code> class, so they will be fluid, please use the class <code>.container</code> when you use them outside of the <code>.wrapper</code> so they will be alignd with the general page container.</p>
+
+					<div class="alert alert-info">
+			            <div class="container-fluid">
+							<div class="alert-icon">
+								<i class="material-icons">info_outline</i>
+							</div>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+
+			            	<b>Info alert:</b> You've got some friends nearby, stop looking at your phone and find them...
+			            </div>
+			        </div>
+			        <div class="alert alert-success">
+			            <div class="container-fluid">
+							<div class="alert-icon">
+								<i class="material-icons">check</i>
+							</div>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+			            	<b>Success Alert:</b> Yuhuuu! You've got your $11.99 album from The Weeknd
+			            </div>
+			        </div>
+			        <div class="alert alert-warning">
+			             <div class="container-fluid">
+							 <div class="alert-icon">
+								<i class="material-icons">warning</i>
+							</div>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+			                 <b>Warning Alert:</b> Hey, it looks like you still have the "copyright ©  2015" in your footer. Please update it!
+			            </div>
+			        </div>
+			        <div class="alert alert-danger">
+			             <div class="container-fluid">
+							 <div class="alert-icon">
+								<i class="material-icons">error_outline</i>
+							</div>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+			                 <b>Error Alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
+			            </div>
+			        </div>
+
+					<pre class="prettyprint">
+&lt;div class="alert alert-info"&gt;
+    &lt;div class="container-fluid"&gt;
+	  &lt;div class="alert-icon"&gt;
+		&lt;i class="material-icons"&gt;info_outline&lt;/i&gt;
+	  &lt;/div&gt;
+	  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+		&lt;span aria-hidden="true"&gt;&lt;i class="material-icons"&gt;clear&lt;/i&gt;&lt;/span&gt;
+	  &lt;/button&gt;
+	  &lt;b&gt;Info alert:&lt;/b&gt; You've got some friends nearby, stop looking at your phone and find them...
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alert alert-success"&gt;
+    &lt;div class="container-fluid"&gt;
+	  &lt;div class="alert-icon"&gt;
+		&lt;i class="material-icons"&gt;check&lt;/i&gt;
+	  &lt;/div&gt;
+	  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+		&lt;span aria-hidden="true"&gt;&lt;i class="material-icons"&gt;clear&lt;/i&gt;&lt;/span&gt;
+	  &lt;/button&gt;
+      &lt;b&gt;Success Alert:&lt;/b&gt; Yuhuuu! You've got your $11.99 album from The Weeknd
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alert alert-warning"&gt;
+    &lt;div class="container-fluid"&gt;
+	  &lt;div class="alert-icon"&gt;
+		&lt;i class="material-icons"&gt;warning&lt;/i&gt;
+	  &lt;/div&gt;
+	  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+		&lt;span aria-hidden="true"&gt;&lt;i class="material-icons"&gt;clear&lt;/i&gt;&lt;/span&gt;
+	  &lt;/button&gt;
+      &lt;b&gt;Warning Alert:&lt;/b&gt; Hey, it looks like you still have the "copyright &amp;copy;  2015" in your footer. Please update it!
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger"&gt;
+    &lt;div class="container-fluid"&gt;
+	  &lt;div class="alert-icon"&gt;
+	    &lt;i class="material-icons"&gt;error_outline&lt;/i&gt;
+	  &lt;/div&gt;
+	  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+		&lt;span aria-hidden="true"&gt;&lt;i class="material-icons"&gt;clear&lt;/i&gt;&lt;/span&gt;
+	  &lt;/button&gt;
+      &lt;b&gt;Error Alert:&lt;/b&gt; Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
+    &lt;/div&gt;
+&lt;/div&gt;
+					</pre>
+    			</div>
+				<!-- end row -->
+
+                <!-- end container -->
+            </div>
+
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer footer-transparent">
+        <div class="container">
+            <nav class="pull-left">
+                <ul>
+					<li>
+						<a href="http://www.creative-tim.com">
+							Creative Tim
+						</a>
+					</li>
+					<li>
+						<a href="http://presentation.creative-tim.com">
+						   About Us
+						</a>
+					</li>
+					<li>
+						<a href="http://blog.creative-tim.com">
+						   Blog
+						</a>
+					</li>
+					<li>
+						<a href="http://www.creative-tim.com/license">
+							Licenses
+						</a>
+					</li>
+                </ul>
+            </nav>
+            <div class="social-area pull-right">
+                <a class="btn btn-social btn-twitter btn-simple" href="https://twitter.com/CreativeTim">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-social btn-facebook btn-simple" href="https://www.facebook.com/CreativeTim">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a class="btn btn-social btn-google btn-simple" href="https://plus.google.com/+CreativetimPage">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                © 2016 Creative Tim, made with love
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Modal Core -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	  </div>
+	  <div class="modal-body">
+		Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+		<button type="button" class="btn btn-info btn-simple">Save</button>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+    <script>
+        var header_height;
+        var fixed_section;
+        var floating = false;
+
+        $().ready(function(){
+            suggestions_distance = $("#suggestions").offset();
+            pay_height = $('.fixed-section').outerHeight();
+
+			$(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+        });
+    </script>
+
